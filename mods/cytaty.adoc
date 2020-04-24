@@ -1,0 +1,19 @@
+== Cytaty
+
+[quote]
+cytat tak po prostu w bloku
+
+[quote]
+cytat
+
+wieloliniowy
+
+[quote, Tomek powiedział, że jego tata powiedział]
+____
+cytat
+
+wieloliniowy
+____
+
+> Cytat po prostu
+

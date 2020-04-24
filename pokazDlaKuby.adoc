@@ -1,46 +1,48 @@
 :author: Tomasz Borek
 :icons: font
 :source-highlighter: pygments
-
+:toc: preamble
+:toc-title: Spis Treści
+:hardbreaks:
+:pseudonim: 007
+:dobre: wstrząśnięte
+:złe: zmieszane
 = Oto dokument
 
 TIP: to dokument pokazujący potęgę Adoca
 
 CAUTION: uważaj, nie będziesz taki sam po ujrzeniu tego dokumentu
 
-IMPORTANT: https://docs.oracle.com/javase/7/docs/technotes/tools/windows/javadoc.html#see linki działają
+NOTE: warte uwagi: https://docs.oracle.com/javase/7/docs/technotes/tools/windows/javadoc.html#see linki działają
 
-== Pokazówka
+IMPORTANT: ważne - w części o URLach jest dokumentacja
 
-image::BrianGoetzOnWhatIsAGetter.png[cytat z Briana]
+Asciidoctor :: świetny sposób na doktoryzowanie się w znaczkach Ascii. Ale można konwertować do HTMLa i PDFa i szeregu innych.
 
-[NOTE]
-.to jest potęga!
-[source, java]
+Mark~down~ ::
+coś co konwertujemy do mark^up^ - czyli znaczników HTMLa. Markdown, Ricka Grubera chyba dzieło. 
+
+.Przykład markdown
 ----
-include::puzzlers.java[]
-----
-
-=== Linie z numerami?
-
-[NOTE]
-.linie kodu mogą mieć atrybut inline lub table by kopiowanie działało z nimi lub bez
-[source, java, linenums]
-----
-include::puzzlers.java[]
+include::mods/markdown.adoc[]
 ----
 
-TIP: domyślnie przy podświetlaczu składni pygments jest :pygments-linenums-mode=table, co daje opcje z lub bez, zależy co zaznaczysz
+include::mods/markdown.adoc[]
 
-=== Wyróżnienia
+include::mods/pokaz.adoc[]
 
-[source, java, linenums]
-----
-include::Test.java[]
-----
-<1> deklaracja klasy z domyślnym specifykatorem dostępu
-<2> tu kod, jaki będziemy wykonywać, obecnie apka nic nie zrobi, włączy się i się zamknie
-<3> tu Javadoc, dokumentacja techniczna mówiąca na co ta klasa jest i jak jej użyć
+include::mods/zmienne.adoc[]
 
+include::mods/formatowanie.adoc[]
 
-Asciidoctor :: świetny sposób na doktoryzowanie się w znaczkach Ascii. Ale można konwertować do HTMLa i PDFa i szeregu innych. 
+include::mods/urle.adoc[]
+
+include::mods/listy.adoc[]
+
+include::mods/kod.adoc[]
+
+include::mods/bloki.adoc[]
+
+include::mods/cytaty.adoc[]
+
+include::mods/prezka.adoc[]

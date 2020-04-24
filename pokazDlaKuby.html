@@ -537,6 +537,18 @@ uważaj, nie będziesz taki sam po ujrzeniu tego dokumentu
 </tr>
 </table>
 </div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+warte uwagi: <a href="https://docs.oracle.com/javase/7/docs/technotes/tools/windows/javadoc.html#see" class="bare">https://docs.oracle.com/javase/7/docs/technotes/tools/windows/javadoc.html#see</a> linki działają
+</td>
+</tr>
+</table>
+</div>
 <div class="admonitionblock important">
 <table>
 <tr>
@@ -544,10 +556,93 @@ uważaj, nie będziesz taki sam po ujrzeniu tego dokumentu
 <i class="fa icon-important" title="Important"></i>
 </td>
 <td class="content">
-<a href="https://docs.oracle.com/javase/7/docs/technotes/tools/windows/javadoc.html#see" class="bare">https://docs.oracle.com/javase/7/docs/technotes/tools/windows/javadoc.html#see</a> linki działają
+ważne - w części o URLach jest dokumentacja
 </td>
 </tr>
 </table>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Asciidoctor </dt>
+<dd>
+<p>świetny sposób na doktoryzowanie się w znaczkach Ascii. Ale można konwertować do HTMLa i PDFa i szeregu innych.</p>
+</dd>
+<dt class="hdlist1">Mark<sub>down</sub> </dt>
+<dd>
+<p>coś co konwertujemy do mark<sup>up</sup> - czyli znaczników HTMLa. Markdown, Ricka Grubera chyba dzieło.</p>
+</dd>
+</dl>
+</div>
+<div class="listingblock">
+<div class="title">Przykład markdown</div>
+<div class="content">
+<pre>## Nagłówek z markdown
+
+```
+to jest blok kodu
+```
+
+Powyższe zostało osiągnięte jak w Markdown.</pre>
+</div>
+</div>
+</div>
+<div id="toc" class="toc">
+<div id="toctitle">Spis Treści</div>
+<ul class="sectlevel1">
+<li><a href="#_nagłówek_z_markdown">Nagłówek z markdown</a></li>
+<li><a href="#_pokazówka">Pokazówka</a></li>
+<li><a href="#_bibliography_links">Bibliography / Links</a></li>
+<li><a href="#_prawdziwa_potęga_z_obsługą_kodu">Prawdziwa potęga z obsługą kodu!</a>
+<ul class="sectlevel2">
+<li><a href="#_linie_z_numerami">Linie z numerami?</a></li>
+<li><a href="#_wyróżnienia">Wyróżnienia</a></li>
+</ul>
+</li>
+<li><a href="#_demo_zmiennych">Demo zmiennych</a></li>
+<li><a href="#_proste_formatowanie_tekstu">Proste formatowanie tekstu</a></li>
+<li><a href="#_urle">URLe</a></li>
+<li><a href="#_proste_formatowanie_tekstu_2">Proste formatowanie tekstu</a></li>
+<li><a href="#_listy">Listy</a>
+<ul class="sectlevel2">
+<li><a href="#_zastosowania">Zastosowania</a></li>
+</ul>
+</li>
+<li><a href="#_kod">Kod</a>
+<ul class="sectlevel2">
+<li><a href="#_z_tytułem_i_składnią">Z tytułem i składnią</a></li>
+<li><a href="#_bloki_kodu_tak_po_prostu_czcionką_mono">Bloki kodu tak po prostu, czcionką mono</a></li>
+</ul>
+</li>
+<li><a href="#_bloki">Bloki</a></li>
+<li><a href="#_zagnieżdżone_bloki">Zagnieżdżone bloki</a>
+<ul class="sectlevel2">
+<li><a href="#_inne">Inne?</a></li>
+</ul>
+</li>
+<li><a href="#_cytaty">Cytaty</a></li>
+<li><a href="#_prezentacja">Prezentacja</a>
+<ul class="sectlevel2">
+<li><a href="#_cytat">cytat</a></li>
+<li><a href="#_transition">transition</a></li>
+<li><a href="#_transition_2">transition</a></li>
+<li><a href="#_transition_3">transition</a></li>
+<li><a href="#_tło">tło</a></li>
+<li><a href="#_tło_okładkowe">tło okładkowe</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_nagłówek_z_markdown">Nagłówek z markdown</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="pygments highlight"><code>to jest blok kodu</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Powyższe zostało osiągnięte jak w Markdown.</p>
 </div>
 </div>
 </div>
@@ -559,6 +654,118 @@ uważaj, nie będziesz taki sam po ujrzeniu tego dokumentu
 <img src="BrianGoetzOnWhatIsAGetter.png" alt="cytat z Briana">
 </div>
 </div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">TERM </dt>
+<dd>
+<p>Definition of it, <code>inline code</code> works here too</p>
+</dd>
+</dl>
+</div>
+<div class="quoteblock">
+<blockquote>
+Quote text accepts <strong>bold</strong>, <em>italics</em>, --strikethrough--
+</blockquote>
+<div class="attribution">
+&#8212; quote source
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="pathTo.png" alt="This is a text that appears instead of an image if path or extension are wrong">
+</div>
+</div>
+<div class="paragraph">
+<p>A link if with http: <a href="http://www.computerhope.com/unix/dmesg.htm" class="bare">http://www.computerhope.com/unix/dmesg.htm</a></p>
+</div>
+<div class="listingblock">
+<div class="title">Title of a code snippet:</div>
+<div class="content">
+<pre>Code snippet
+Is between
+Two lines of 4 dashes
+Like so:
+MCi_ADDR register valid
+Processor context corrupt
+MCA: Data CACHE Level-1 Data-Read Error
+STATUS be00000000200135 MCGSTATUS 5
+CPUID Vendor Intel Family 6 Model 58
+RIP: _raw_spin_lock+0x12/0x50}
+SOCKET 0 APIC 1 microcode 15</pre>
+</div>
+</div>
+<div class="quoteblock">
+<div class="title">A word of warning from the wise:</div>
+<blockquote>
+The man page for vmstat describes "r" as "The number of processes waiting for run time", which is either incorrect or misleading (on recent Linux distributions it&#8217;s reporting those threads that are waiting, and threads that are running on-CPU; it&#8217;s just the wait threads in other OSes).
+</blockquote>
+<div class="attribution">
+&#8212; Brendan Gregg<br>
+<cite>http://www.brendangregg.com/USEmethod/use-rosetta.html</cite>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_bibliography_links">Bibliography / Links</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Besides link already used and added earlier, few others caught my eye:</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<a href="http://stackoverflow.com/a/14119817/999165">Peter Lawrey&#8217;s one-liner for poor-man&#8217;s profiler&#8230;&#8203; in Java code itself!</a>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<a href="http://www.javacodegeeks.com/2012/03/jvm-how-to-analyze-thread-dump.htmli">Pierre Hugues Charbonneau on Java Code Geeks presents thread dump analisys</a>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<a href="http://bugs.java.com/view_bug.do;jsessionid=fd2c497ca59504cd004165ec66fc?bug_id=6740344">Bug report turned doc enhancement request, on SIGHUP handling by JVM</a>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-caution" title="Caution"></i>
+</td>
+<td class="content">
+If you started process in the background and killed it&#8217;s terminal, process might get killed. If it ain&#8217;t, then<br>
+<a href="http://stackoverflow.com/questions/593724/redirect-stderr-stdout-of-a-process-after-its-been-started-using-command-lin">to redirect it&#8217;s output is no easy task</a>. Still, it&#8217;s feasible.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_prawdziwa_potęga_z_obsługą_kodu">Prawdziwa potęga z obsługą kodu!</h2>
+<div class="sectionbody">
 <div class="listingblock">
 <div class="title">to jest potęga!</div>
 <div class="content">
@@ -613,10 +820,23 @@ domyślnie przy podświetlaczu składni pygments jest :pygments-linenums-mode=ta
 </tr>
 </table>
 </div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+powyższy przykład ma też wybrane linie, które chce załączyć, ale można dać wybrane sekcje
+</td>
+</tr>
+</table>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_wyróżnienia">Wyróżnienia</h3>
 <div class="listingblock">
+<div class="title">Jeśli chcesz zwrócić czyjąś uwagę na konkretne rzeczy&#8230;&#8203;</div>
 <div class="content">
 <pre class="pygments highlight"><code data-lang="java"><table class="pyhltable"><tr><td class="linenos"><div class="linenodiv">1
 2
@@ -646,17 +866,510 @@ domyślnie przy podświetlaczu składni pygments jest :pygments-linenums-mode=ta
 </tr>
 <tr>
 <td><i class="conum" data-value="3"></i><b>3</b></td>
-<td>tu Javadoc, dokumentacja techniczna mówiąca na co ta klasa jest i jak jej użyć
-<div class="dlist">
-<dl>
-<dt class="hdlist1">Asciidoctor </dt>
-<dd>
-<p>świetny sposób na doktoryzowanie się w znaczkach Ascii. Ale można konwertować do HTMLa i PDFa i szeregu innych.</p>
-</dd>
-</dl>
-</div></td>
+<td>tu Javadoc, dokumentacja techniczna mówiąca na co ta klasa jest i jak jej użyć</td>
 </tr>
 </table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_demo_zmiennych">Demo zmiennych</h2>
+<div class="sectionbody">
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Zmienne są zadeklarowane w głównym pliku.
+</td>
+</tr>
+</table>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Agent {pseudonim} zimno rzekł:</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>&gt; {dobre}, nie {złe}</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Agent 007 zimno rzekł:</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>wstrząśnięte, nie zmieszane</p>
+</div>
+</blockquote>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_proste_formatowanie_tekstu">Proste formatowanie tekstu</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>pogrubienie</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>pogrubione też?</strong></p>
+</div>
+<div class="paragraph">
+<p><em>kursywa</em></p>
+</div>
+<div class="paragraph">
+<p><em>kursywa</em></p>
+</div>
+<div class="paragraph">
+<p>-wykreślenie-</p>
+</div>
+<div class="paragraph">
+<p>i trochę zwykłego tekstu</p>
+</div>
+<div class="paragraph">
+<p>z pustymi liniami pomiędzy</p>
+</div>
+<div class="paragraph">
+<p>by zobaczyć<br>
+            jak to wygląda</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Dobrą praktyką jest nazywanie wątków</pre>
+</div>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>A mutable reduction operation accumulates input elements into a mutable result container, such as a Collection or StringBuilder, as it processes the elements in the stream.</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p><code>String concatenated = strings.reduce("", String::concat)</code></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_urle">URLe</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/" class="bare">https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/</a><br>
+<a href="https://asciidoctor.org/docs/">Dokumentacja ADOCa</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/package-summary.html">Podsumowanie pakietu strumieni w JDK8 Oracle&#8217;a</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_proste_formatowanie_tekstu_2">Proste formatowanie tekstu</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>pogrubienie</strong></p>
+</div>
+<div class="paragraph">
+<p><em>kursywa</em></p>
+</div>
+<div class="paragraph">
+<p><strong>wykreślenie</strong></p>
+</div>
+<div class="paragraph">
+<p>i trochę zwykłego tekstu</p>
+</div>
+<div class="paragraph">
+<p>z pustymi liniami pomiędzy</p>
+</div>
+<div class="paragraph">
+<p>by zobaczyć<br>
+            jak to wygląda</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Dobrą praktyką jest nazywanie wątków</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_listy">Listy</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Bywają numerowane i punktowane. Robi się je przez <code>.</code> albo przez <code>*</code>.</p>
+</div>
+<div class="sect2">
+<h3 id="_zastosowania">Zastosowania</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>dokumentacja</p>
+</li>
+<li>
+<p>maszynowe tworzenie HTMLa</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>statyczne strony</p>
+</li>
+<li>
+<p>prezentacje</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>opis repozytoriów</p>
+<div class="ulist">
+<ul>
+<li>
+<p>obsługiwane przez wiele platform</p>
+<div class="ulist">
+<ul>
+<li>
+<p>GitHub</p>
+</li>
+<li>
+<p>GitLab</p>
+</li>
+<li>
+<p>ale np. nie BitBucket, OIDP (sprawdźcie sobie)</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+listy można zagnieżdżać
+</td>
+</tr>
+</table>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>punkt 1</p>
+</li>
+<li>
+<p>punkt 2</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>punkt 2.1., mam nadzieję</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>dalsze zagnieżdżenie</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>punkt 3</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Bez tej linii listy zostaną scalone, ona wprowadza nowy paragraf:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>oto</p>
+</li>
+<li>
+<p>lista</p>
+</li>
+<li>
+<p>jest</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_kod">Kod</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Kod można wprowadzić pisząc czcionką mono, czyli o stałej szerokości, np. <code>String s = new String();</code>, nie mamy wtedy podświetlania składni ale możemy taki kod ująć w tekście.</p>
+</div>
+<div class="paragraph">
+<p>Kod blokowo można osiągnąć Tabem:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>blok czegokolwiek, pisany czcionką o stałej szerokości
+kod też przejdzie
+jest wieloliniowy</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Albo <code>----</code> oznaczając tak początek i koniec bloku:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>to też jest blok czcionką mono pisany</pre>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_z_tytułem_i_składnią">Z tytułem i składnią</h3>
+<div class="paragraph">
+<p>To <strong>może</strong> być kolorowane, jeśli czegoś do tego użyjemy. Adoc nie ma wbudowanego silnika do kolorowania składni.</p>
+</div>
+<div class="listingblock">
+<div class="title">częste polecenie hakera ;-)</div>
+<div class="content">
+<pre class="pygments highlight"><code data-lang="bash"><span></span>cat /etc/passwd</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">koordynaty z POMa</div>
+<div class="content">
+<pre class="pygments highlight"><code data-lang="xml"><span></span>    <span class="tok-nt">&lt;groupId&gt;</span>pl.lafk<span class="tok-nt">&lt;/groupId&gt;</span>
+    <span class="tok-nt">&lt;artifactId&gt;</span>tomkat<span class="tok-nt">&lt;/artifactId&gt;</span>
+    <span class="tok-nt">&lt;version&gt;</span>0.1<span class="tok-nt">&lt;/version&gt;</span>
+    <span class="tok-nt">&lt;name</span> <span class="tok-na">atrybut=</span><span class="tok-s">&quot;a&quot;</span><span class="tok-nt">&gt;</span>tomkat<span class="tok-nt">&lt;/name&gt;</span>
+    <span class="tok-nt">&lt;description&gt;</span>Wiosna z buta<span class="tok-nt">&lt;/description&gt;</span>
+    <span class="tok-nt">&lt;url&gt;</span>lafk.pl<span class="tok-nt">&lt;/url&gt;</span></code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_bloki_kodu_tak_po_prostu_czcionką_mono">Bloki kodu tak po prostu, czcionką mono</h3>
+<div class="literalblock">
+<div class="content">
+<pre>[tammo@lafk-T470 adoc.demo]$ asciidoctor plik.adoc        [INSERT]
+asciidoctor: WARNING: plik.adoc: line 18: section title out of sequence: expected level 2, got level 3
+[tammo@lafk-T470 adoc.demo]$ asciidoctor plik.adoc        [INSERT]
+[tammo@lafk-T470 adoc.demo]$ asciidoctor plik.adoc        [INSERT]
+[tammo@lafk-T470 adoc.demo]$ asciidoctor plik.adoc        [INSERT]
+[tammo@lafk-T470 adoc.demo]$</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_bloki">Bloki</h2>
+<div class="sectionbody">
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-caution" title="Caution"></i>
+</td>
+<td class="content">
+<div class="title">obrazek czytany z netu jest groźny</div>
+Nie tylko obrazek zresztą. By Twój adoc miał cokolwiek z netu musisz uruchomić go z parametrem <code>-a allow-uri-read</code>. Upewnij się, że to dobry pomysł, zwykle nie.
+</td>
+</tr>
+</table>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="https://avatars1.githubusercontent.com/u/79351?s=88&u=d0e91997d1ba984f82a009663a26e5890420e425&v=4" alt="Dan Allen - obrazek z netu">
+</div>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Dan jest twórcą Asciidoktora.
+</td>
+</tr>
+</table>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="jakPowstajeAdoc.png" alt="jakPowstajeAdoc">
+</div>
+<div class="title">Figure 1. A teraz z dysku</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="nieMaTakiego.png" alt="Tego obrazka nie ma - zamiast wyświetla się tekst w nawiasach kwadratowych">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_zagnieżdżone_bloki">Zagnieżdżone bloki</h2>
+<div class="sectionbody">
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="title">Thread lifecycle</div>
+<div class="paragraph">
+<p><strong>Enum: <code>java.lang.Thread.State</code>:</strong></p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">NEW</dt>
+<dd>
+<p>Thread state for a thread which has not yet started.</p>
+</dd>
+<dt class="hdlist1">RUNNABLE</dt>
+<dd>
+<p>Thread state for a runnable thread.</p>
+</dd>
+</dl>
+</div>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-caution" title="Caution"></i>
+</td>
+<td class="content">
+<div class="title">Nested blocks are OK if more = signs are in</div>
+<div class="literalblock">
+<div class="content">
+<pre>_RUNNABLE_ means OK, right?</pre>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><code>Thread.getState()</code> gives you that.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_inne">Inne?</h3>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+blokami są też bloki kodu, cytaty i nagłówki (sekcje) dokumentu.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_cytaty">Cytaty</h2>
+<div class="sectionbody">
+<div class="quoteblock">
+<blockquote>
+cytat tak po prostu w bloku
+</blockquote>
+</div>
+<div class="quoteblock">
+<blockquote>
+cytat
+</blockquote>
+</div>
+<div class="paragraph">
+<p>wieloliniowy</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>cytat</p>
+</div>
+<div class="paragraph">
+<p>wieloliniowy</p>
+</div>
+</blockquote>
+<div class="attribution">
+&#8212; Tomek powiedział<br>
+<cite>że jego tata powiedział</cite>
+</div>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Cytat po prostu</p>
+</div>
+</blockquote>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_prezentacja">Prezentacja</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>testy <code>reveal.js</code></p>
+</div>
+<div class="sect2 stretch">
+<h3 id="_cytat">cytat</h3>
+<div class="quoteblock stretch">
+<blockquote>
+<div class="paragraph stretch">
+<p>This is one of my favorite books on programming, although I burned through it in about 3 or 4 hours, and didn&#8217;t learn a huge amount from it. The point is that it was fun to read, it made a lot of sense, and it was helpful in reinforcing the habits I knew were good ones.</p>
+</div>
+<div class="paragraph stretch">
+<p>The primary focus of the book is on how to be an effective and efficient programmer, and how to have fun practicing your craft. So, for instance, they&#8217;ll recommend that you learn how to touch-type with all ten of your fingers. And that you choose a powerful extensible editor and learn how to write extensions for it. And that you use a programming language that supports metaprogramming, so you can code your way out of holes without using hundreds of thousands of lines of code.</p>
+</div>
+</blockquote>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_transition">transition</h3>
+<div class="paragraph">
+<p>how is it? zoom</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_transition_2">transition</h3>
+<div class="paragraph">
+<p>how is it? slide</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_transition_3">transition</h3>
+<div class="paragraph">
+<p>how is it? fade-in</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_tło">tło</h3>
+<div class="imageblock">
+<div class="content">
+<img src="India.png" alt="background">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_tło_okładkowe">tło okładkowe</h3>
+<div class="imageblock">
+<div class="content">
+<img src="India.png" alt="background">
+</div>
 </div>
 </div>
 </div>
@@ -664,7 +1377,7 @@ domyślnie przy podświetlaczu składni pygments jest :pygments-linenums-mode=ta
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2018-11-27 13:32:37 CET
+Last updated 2020-04-24 18:32:11 CEST
 </div>
 </div>
 </body>

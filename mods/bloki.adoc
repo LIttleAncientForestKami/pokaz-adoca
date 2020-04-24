@@ -1,0 +1,37 @@
+== Bloki
+
+[CAUTION]
+.obrazek czytany z netu jest groźny
+Nie tylko obrazek zresztą. By Twój adoc miał cokolwiek z netu musisz uruchomić go z parametrem `-a allow-uri-read`. Upewnij się, że to dobry pomysł, zwykle nie.
+
+image::https://avatars1.githubusercontent.com/u/79351?s=88&u=d0e91997d1ba984f82a009663a26e5890420e425&v=4[Dan Allen - obrazek z netu]
+
+IMPORTANT: Dan jest twórcą Asciidoktora.
+
+.A teraz z dysku
+image::jakPowstajeAdoc.png[]
+
+image::nieMaTakiego.png[Tego obrazka nie ma - zamiast wyświetla się tekst w nawiasach kwadratowych]
+
+== Zagnieżdżone bloki
+
+[IMPORTANT]
+.Thread lifecycle
+======
+*Enum: `java.lang.Thread.State`:*
+
+NEW:: Thread state for a thread which has not yet started.
+
+RUNNABLE:: Thread state for a runnable thread.
+[CAUTION]
+.Nested blocks are OK if more = signs are in
+====
+ _RUNNABLE_ means OK, right?
+====
+
+`Thread.getState()` gives you that.
+======
+
+=== Inne?
+
+IMPORTANT: blokami są też bloki kodu, cytaty i nagłówki (sekcje) dokumentu.

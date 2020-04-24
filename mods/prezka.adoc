@@ -1,0 +1,39 @@
+== Prezentacja
+
+testy `reveal.js`
+
+[.stretch]
+=== cytat
+
+[.stretch]
+[quote]
+--
+[.stretch]
+This is one of my favorite books on programming, although I burned through it in about 3 or 4 hours, and didn't learn a huge amount from it. The point is that it was fun to read, it made a lot of sense, and it was helpful in reinforcing the habits I knew were good ones.
+
+[.stretch]
+The primary focus of the book is on how to be an effective and efficient programmer, and how to have fun practicing your craft. So, for instance, they'll recommend that you learn how to touch-type with all ten of your fingers. And that you choose a powerful extensible editor and learn how to write extensions for it. And that you use a programming language that supports metaprogramming, so you can code your way out of holes without using hundreds of thousands of lines of code.
+--
+
+[transition="zoom", transition-speed="fast"]
+=== transition
+
+how is it? zoom
+
+[transition="slide", transition-speed="slow"]
+=== transition
+
+how is it? slide
+
+[transition="fade-in", transition-speed="slow"]
+=== transition
+
+how is it? fade-in
+
+=== tło
+
+image::India.png[background]
+
+=== tło okładkowe
+
+image::India.png[background, size=cover]

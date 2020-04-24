@@ -1,0 +1,12 @@
+== Demo zmiennych
+
+TIP: Zmienne są zadeklarowane w głównym pliku.
+
+    Agent {pseudonim} zimno rzekł: 
+
+    > {dobre}, nie {złe}
+
+Agent {pseudonim} zimno rzekł: 
+
+> {dobre}, nie {złe}
+

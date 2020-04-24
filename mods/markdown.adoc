@@ -1,0 +1,7 @@
+## Nagłówek z markdown
+
+```
+to jest blok kodu
+```
+
+Powyższe zostało osiągnięte jak w Markdown.

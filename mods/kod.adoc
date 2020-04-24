@@ -1,0 +1,46 @@
+== Kod
+
+Kod można wprowadzić pisząc czcionką mono, czyli o stałej szerokości, np. `String s = new String();`, nie mamy wtedy podświetlania składni ale możemy taki kod ująć w tekście.
+
+Kod blokowo można osiągnąć Tabem:
+
+    blok czegokolwiek, pisany czcionką o stałej szerokości
+    kod też przejdzie
+    jest wieloliniowy
+
+Albo `----` oznaczając tak początek i koniec bloku:
+
+----
+to też jest blok czcionką mono pisany
+----
+
+=== Z tytułem i składnią
+
+To *może* być kolorowane, jeśli czegoś do tego użyjemy. Adoc nie ma wbudowanego silnika do kolorowania składni.
+
+.częste polecenie hakera ;-)
+[source, bash]
+----
+cat /etc/passwd
+----
+
+.koordynaty z POMa
+[source, xml]
+----
+    <groupId>pl.lafk</groupId>
+    <artifactId>tomkat</artifactId>
+    <version>0.1</version>
+    <name atrybut="a">tomkat</name>
+    <description>Wiosna z buta</description>
+    <url>lafk.pl</url>
+----
+
+=== Bloki kodu tak po prostu, czcionką mono
+
+    [tammo@lafk-T470 adoc.demo]$ asciidoctor plik.adoc        [INSERT]
+    asciidoctor: WARNING: plik.adoc: line 18: section title out of sequence: expected level 2, got level 3
+    [tammo@lafk-T470 adoc.demo]$ asciidoctor plik.adoc        [INSERT]
+    [tammo@lafk-T470 adoc.demo]$ asciidoctor plik.adoc        [INSERT]
+    [tammo@lafk-T470 adoc.demo]$ asciidoctor plik.adoc        [INSERT]
+    [tammo@lafk-T470 adoc.demo]$
+

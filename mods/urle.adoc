@@ -1,0 +1,24 @@
+== URLe
+
+https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/
+https://asciidoctor.org/docs/[Dokumentacja ADOCa]
+
+https://docs.oracle.com/javase/8/docs/api/java/util/stream/package-summary.html[Podsumowanie pakietu strumieni w JDK8 Oracle'a]
+
+== Proste formatowanie tekstu
+
+**pogrubienie**
+
+__kursywa__
+
+*wykreślenie*
+
+i trochę zwykłego tekstu
+
+z pustymi liniami pomiędzy
+
+by zobaczyć
+            jak to wygląda
+
+    Dobrą praktyką jest nazywanie wątków
+

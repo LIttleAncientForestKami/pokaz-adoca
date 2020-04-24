@@ -1,0 +1,30 @@
+== Listy
+
+Bywają numerowane i punktowane. Robi się je przez `.` albo przez `*`. 
+
+=== Zastosowania
+
+. dokumentacja
+. maszynowe tworzenie HTMLa
+.. statyczne strony
+.. prezentacje
+. opis repozytoriów
+* obsługiwane przez wiele platform
+** GitHub
+** GitLab
+** ale np. nie BitBucket, OIDP (sprawdźcie sobie)
+
+TIP: listy można zagnieżdżać
+
+. punkt 1
+. punkt 2
+.. punkt 2.1., mam nadzieję
+... dalsze zagnieżdżenie
+. punkt 3
+
+Bez tej linii listy zostaną scalone, ona wprowadza nowy paragraf:
+
+* oto
+* lista
+* jest
+

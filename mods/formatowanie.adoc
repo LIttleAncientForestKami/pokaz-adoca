@@ -1,0 +1,24 @@
+== Proste formatowanie tekstu
+
+**pogrubienie**
+
+*pogrubione też?*
+
+__kursywa__
+
+_kursywa_
+
+-wykreślenie-
+
+i trochę zwykłego tekstu
+
+z pustymi liniami pomiędzy
+
+by zobaczyć
+            jak to wygląda
+
+    Dobrą praktyką jest nazywanie wątków
+
+> A mutable reduction operation accumulates input elements into a mutable result container, such as a Collection or StringBuilder, as it processes the elements in the stream.
+
+`String concatenated = strings.reduce("", String::concat)`
