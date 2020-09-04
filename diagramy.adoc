@@ -1,0 +1,175 @@
+:umlet: /opt/Umlet/umlet.sh
+= Diagramy
+
+== Ditaa
+
+[ditaa, diag/diag_Dita, png]
+....
+                   +-------------+
+                   | Asciidoctor |-------+
+                   |  Diagram    |       |
+                   +-------------+       | PNG out
+                       ^                 |
+                       | ditaa in        |
+                       |                 v
+ +--------+   +--------+----+    /----------------\
+ |        | --+ Asciidoctor +--> |                |
+ |  Text  |   +-------------+    |Beautiful output|
+ |Document|   |   !magic!   |    |                |
+ |     {d}|   |             |    |                |
+ +---+----+   +-------------+    \----------------/
+     :                                   ^
+     |          Lots of work             |
+     +-----------------------------------+
+....
+
+== UMLet
+
+For some reason UMLet never worked. :( 
+
+WARNING: SVG vs PNG perhaps?
+
+. I installed the standalone app
+.. https://www.umlet.com/
+. I unpacked it
+. I enabled the shell script there
+. I corrected the incorrect UMLet home var so JAR is reached
+. and still it doesn't show the image :-(
+
+.Credits: Harard Storle, http://www.itmeyer.at/umlet/uml2/uxf/CL_design.uxf
+//[umlet, diag/diag_Umlet, png]
+[umlet]
+....
+include:umlet.xcf[]
+....
+
+== Syntrax
+
+[syntrax, diag/diag_Syntrax, png]
+.Credits: Syntrax and their docs. https://kevinpt.github.io/syntrax/
+....
+line('[', 'foo', ',', '/bar', ']')
+....
+
+[syntrax, diag/diag_Syntrax1, png]
+....
+loop(line('/forward', 'path'), line('backward', 'path'))
+....
+
+[syntrax, diag/diag_Syntrax2, png]
+....
+loop('forward', None)
+....
+
+[syntrax, diag/diag_Syntrax3, png]
+....
+toploop(line('(', 'forward', ')'), line(')', 'backward', '('))
+....
+[syntrax, diag/diag_Syntrax4, png]
+....
+choice('A', 'B', 'C')
+....
+[syntrax, diag/diag_Syntrax5, png]
+....
+opt('A', 'B', 'C')
+....
+[syntrax, diag/diag_Syntrax6, png]
+....
+choice(None, line('A', 'B', 'C'))
+....
+[syntrax, diag/diag_Syntrax7, png]
+....
+optx('A', 'B', 'C')
+....
+[syntrax, diag/diag_Syntrax8, png]
+....
+stack(
+  line('top', 'line'),
+  line('bottom', 'line')
+)
+....
+
+[syntrax, diag/diag_Syntrax9, png]
+....
+stack(
+  line('A', 'B'),
+  opt('bypass'),
+  line('finish')
+)
+....
+
+TIP: Syntrax can also be styled, look into syntrax ambitious for more, I didn't achieve that yet
+
+
+== Block
+
+[quote, http://blockdiag.com/en/]
+.Supports:
+____
+block diagram (w/ blockdiag)
+sequence diagram (w/ seqdiag)
+activity diagram (w/ actdiag)
+logical network diagram (w/ nwdiag)
+____
+
+[blockdiag, diag/diag_Block, png]
+.Credits: Blockdiagram sample from http://blockdiag.com/en/blockdiag/examples.html#simple-diagram
+....
+blockdiag {
+   A -> B -> C -> D;
+   A -> E -> F -> G;
+}
+....
+
+[blockdiag, diag/diag_BlockFlow, png]
+....
+blockdiag {
+  // standard node shapes
+  box [shape = box];
+  square [shape = square];
+  roundedbox [shape = roundedbox];
+  dots [shape = dots];
+
+  circle [shape = circle];
+  ellipse [shape = ellipse];
+  diamond [shape = diamond];
+  minidiamond [shape = minidiamond];
+
+  note [shape = note];
+  mail [shape = mail];
+  cloud [shape = cloud];
+  actor [shape = actor];
+
+  beginpoint [shape = beginpoint];
+  endpoint [shape = endpoint];
+
+  box -> square -> roundedbox -> dots;
+  circle -> ellipse -> diamond -> minidiamond;
+  note -> mail -> cloud -> actor;
+  beginpoint -> endpoint;
+
+  // node shapes for flowcharts
+  condition [shape = flowchart.condition];
+  database [shape = flowchart.database];
+  terminator [shape = flowchart.terminator];
+  input [shape = flowchart.input];
+
+  loopin [shape = flowchart.loopin];
+  loopout [shape = flowchart.loopout];
+
+  condition -> database -> terminator -> input;
+  loopin -> loopout;
+}
+....
+
+== Meme extension
+
+Perhaps I also need to enable the extension somehow or get the image? Doesn't yet work
+
+`meme::yunoguy.jpg[Doc writers,Y U NO \\ AsciiDoc]`
+
+== Sources
+
+. https://asciidoctor.org/docs/asciidoctor-diagram/#creating-a-diagram
+. https://asciidoctor.org/news/2014/02/18/plain-text-diagrams-in-asciidoctor/
+. https://asciidoctor.org/docs/asciidoctor-diagram/#diagram-attributes

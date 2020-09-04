@@ -1,0 +1,10 @@
+# Vim swap files
+*.sw?
+# diagram cache
+.asciidoctor/ 
+# generated
+*.html 
+diag/diag_*.png
+
+# UMLET?
+diag-*.svg

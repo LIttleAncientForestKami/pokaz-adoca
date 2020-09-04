@@ -1,0 +1,83 @@
+[syntrax, diag_SyntraxStyled, png]
+....
+[style]
+line_width = 2
+outline_width = 2
+padding = 5
+line_color = (0, 0, 0)
+max_radius = 9
+h_sep = 17
+v_sep = 9
+arrows = True
+title_pos = 'tl'
+bullet_fill = (255, 255, 255)
+text_color = (0, 0, 0)
+shadow = True
+shadow_fill = (0, 0, 0, 127)
+title_font = ('Sans', 22, 'bold')
+
+[bubble]
+pattern = '^\w'
+shape = 'bubble'
+text_mod = None
+font = ('Sans', 14, 'bold')
+text_color = (0, 0, 0)
+fill = (179, 229, 252)
+
+[box]
+pattern = '^/'
+shape = 'box'
+text_mod = 'lambda txt: txt[1:]'
+font = ('Times', 14, 'italic')
+text_color = (0, 0, 0)
+fill = (144, 164, 174)
+
+[token]
+pattern = '.'
+shape = 'bubble'
+text_mod = None
+font = ('Sans', 16, 'bold')
+text_color = (0, 0, 0)
+fill = (179, 229, 252)
+....
+
+
+[syntrax, diag_SyntraxStyledExtra, png]
+....
+[style]
+line_width = 3               ; Thicker lines
+outline_width = 3
+padding = 5
+line_color = (0, 0, 0)
+max_radius = 29              ; Larger radii
+h_sep = 17
+v_sep = 9
+arrows = False               ; Remove arrows
+title_pos = 'tl'
+bullet_fill = 'yellow'       ; Requires optional webcolors package to be installed
+text_color = (0, 0, 0)
+shadow = True
+shadow_fill = (0, 0, 0, 127)
+title_font = ('Sans', 22, 'bold')
+
+[hex_bubble]                 ; User-defined style name
+pattern = '^\w'
+shape = 'hex'                ; Hexagon shape for node
+font = ('Sans', 14, 'bold')
+fill = (255,0,0,127)         ; Alpha component for transparent fills
+
+[box]
+pattern = '^/'
+shape = 'box'
+text_mod = 'lambda txt: txt[1:]'
+font = ('Sans', 14, 'bold')
+text_color = (100, 100, 100)
+fill = '#88AAEE'
+
+[token]
+pattern = '.'
+shape = 'bubble'
+font = ('Times', 16, 'italic')
+fill = (0,255,0,127)
+....
+
