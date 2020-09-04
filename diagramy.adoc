@@ -4,6 +4,7 @@
 == Ditaa
 
 [ditaa, diag/diag_Dita, png]
+.CBLK should colour it in black but doesn't work
 ....
                    +-------------+
                    | Asciidoctor |-------+
@@ -16,7 +17,7 @@
  |        | --+ Asciidoctor +--> |                |
  |  Text  |   +-------------+    |Beautiful output|
  |Document|   |   !magic!   |    |                |
- |     {d}|   |             |    |                |
+ |     {d}|   |             |    |  CBLK          |
  +---+----+   +-------------+    \----------------/
      :                                   ^
      |          Lots of work             |
