@@ -1,0 +1,85 @@
+= Title: subtitle
+Tomek @LAFK_pl Borek, Asciidoctor, Vogella
+:icons: font
+:source-highlighter: pygments
+//:pygments-style: xcode
+:pygments-style: lovelace
+//:pygments-style: fruity
+//:pygments-style: manni
+//:pygments-style: autumn
+//:pygments-style: monokai
+//:pygments-style: vim 
+//:pygments-style: friendly
+:experimental:
+// nie działa tak: include:nagłówek.adoc[]
+
+https://mrhaki.blogspot.com/2015/04/awesome-asciidoctor-display-keyboard.html
+https://www.vogella.com/tutorials/AsciiDoc/article.html#menus-and-buttons
+https://asciidoctor.org/docs/asciidoc-writers-guide/
+.Ikony!
+....
+Za: https://fontawesome.com/icons?d=gallery&q=code&m=free
+
+icon:file[] icon:folder[] icon:project-diagram[] icon:microchip[]
+icon:java[]
+icon:laptop-code[] icon:code-merge[]
+icon:moon[] icon:planet-moon[] icon:moon-cloud[] icon:thunderstorm-moon[]
+
+icon:code-branch[]
+icon:code[]
+icon:file-code[]
+icon:terminal[]
+
+icon:anchor[]
+....
+
+.Ikony!
+____
+Za: https://fontawesome.com/icons?d=gallery&q=code&m=free
+
+icon:file[] icon:folder[] icon:project-diagram[] icon:microchip[]
+icon:java[]
+icon:laptop-code[] icon:code-merge[]
+icon:moon[] icon:planet-moon[] icon:moon-cloud[] icon:thunderstorm-moon[]
+
+icon:code-branch[]
+icon:code[]
+icon:file-code[]
+icon:terminal[]
+
+icon:anchor[]
+____
+
+
+.Thanks
+[%collapsible]
+====
+Thank you Vogella for your article
+
+And a list of sources going with it
+====
+
+Use `pygmentize -L styles` to see available styles. Current style is {pygments-style}
+
+[source, java]
+----
+System.out.println("Hello");
+private int a;
+----
+
+.Sidebar with experimental features
+****
+btn:[OK]
+
+kbd:[Super+T]
+****
+
+This is a listing block: 
+[listing]
+sudo dnf install asciidoc
+
+.This is an open block acting as a sidebar:
+[sidebar]
+--
+hi! I'm a sidebar-wannabe... not! I'm a sidebar!
+--

@@ -1,0 +1,11 @@
+:icons: font
+:source-highlighter: pygments
+//:pygments-style: xcode
+:pygments-style: lovelace
+//:pygments-style: fruity
+//:pygments-style: manni
+//:pygments-style: autumn
+//:pygments-style: monokai
+//:pygments-style: vim 
+//:pygments-style: friendly
+:experimental:
