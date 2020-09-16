@@ -1,0 +1,23 @@
+:description: This story chronicles the inexplicable hazards and vicious beasts a \
+team must conquer and vanquish on their journey to discovering the true power of \
+Open Source.
+:organization: Company Name
+:doctype: book
+// Settings:
+:experimental:
+ifeval::["{asciidoctor-version}" < "1.5.7"]
+:legacy-footnoteref:
+endif::[]
+ifdef::backend-pdf[]
+:pdf-style: chronicles
+:pdf-stylesdir: {docdir}
+:title-logo-image: image:sample-banner.svg[pdfwidth=4.25in,align=center]
+:source-highlighter: rouge
+//:rouge-style: github
+
+Źródła:
+
+. https://github.com/asciidoctor/asciidoctor-pdf/blob/master/docs/theming-guide.adoc#basic-theme
+. https://github.com/asciidoctor/asciidoctor-pdf/issues/89
+. https://github.com/asciidoctor/asciidoctor-maven-examples/commit/a0966d5df48f5b2e7d9a8bae71171ffccf589ab7
+. https://www.wimdeblauwe.com/blog/2019/2019-12-20-customization-of-asciidoctor-pdf-output/

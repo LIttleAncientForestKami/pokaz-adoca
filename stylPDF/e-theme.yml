@@ -1,0 +1,26 @@
+extends: default
+# supposedly, I don't need to do that (add fonts) if I extend. But I do, otherwise C-fonts are taken and Windows 1252 charset is used to my chagrin. :(
+font:
+  catalog:
+    merge: true
+    # Noto Serif supports Latin, Latin-1 Supplement, Latin Extended-A, Greek, Cyrillic, Vietnamese & an assortment of symbols
+    Noto Serif:
+      normal: GEM_FONTS_DIR/notoserif-regular-subset.ttf
+      bold: GEM_FONTS_DIR/notoserif-bold-subset.ttf
+      italic: GEM_FONTS_DIR/notoserif-italic-subset.ttf
+      bold_italic: GEM_FONTS_DIR/notoserif-bold_italic-subset.ttf
+    # M+ 1mn supports ASCII and the circled numbers used for conums
+    M+ 1mn:
+      normal: GEM_FONTS_DIR/mplus1mn-regular-subset.ttf
+      bold: GEM_FONTS_DIR/mplus1mn-bold-subset.ttf
+      italic: GEM_FONTS_DIR/mplus1mn-italic-subset.ttf
+      bold_italic: GEM_FONTS_DIR/mplus1mn-bold_italic-subset.ttf
+footer:
+  recto:
+    left:
+      content: 'property of'
+    right:
+      content: 'EPAM'
+  verso:
+    left:
+      content: '{page-number} | {section-or-chapter-title} | EPAM Systems intellectual property.' 
