@@ -1,7 +1,16 @@
-## Nagłówek z markdown
+## Nagłówek z Markdown
 
 ```
 to jest blok kodu
 ```
 
-Powyższe zostało osiągnięte jak w Markdown.
+**Powyższe** *zostało* osiągnięte jak w Markdown.
+
+Lista w Markdown: 
+
+1. punkt pierwszy
+1. punkt drugi
+1. punkt trzeci
+1. punkt czwarty
+1. punkt piąty
+1. punkt szósty
