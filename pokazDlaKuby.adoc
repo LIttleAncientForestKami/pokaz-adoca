@@ -1,4 +1,4 @@
-:author: Tomasz Borek
+:author: Tomasz Borek LAFK_pl
 :icons: font
 :source-highlighter: pygments
 :toc: preamble
