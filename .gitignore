@@ -8,3 +8,7 @@ diag/diag_*.png
 
 # UMLET?
 diag-*.svg
+
+# .idea i .iml
+.idea/
+*.iml
