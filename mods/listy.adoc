@@ -18,9 +18,10 @@ TIP: listy można zagnieżdżać
 
 . punkt 1
 . punkt 2
-.. punkt 2.1., mam nadzieję
-... dalsze zagnieżdżenie
 . punkt 3
+.. punkt 3.1., mam nadzieję
+... dalsze zagnieżdżenie
+. punkt 4
 
 Bez tej linii listy zostaną scalone, ona wprowadza nowy paragraf:
 
