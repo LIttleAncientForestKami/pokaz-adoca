@@ -1,21 +1,19 @@
 = Diagramy
 
-Dużo różnych możliwości tutaj: https://docs.asciidoctor.org/diagram-extension/latest/diagram_types/syntrax/
+Adoc supports multiple diagram types with `asciidoctor-diagram` gem, see here for syntrax (and lots of others!): https://docs.asciidoctor.org/diagram-extension/latest/diagram_types/syntrax/
 
 include::mods/diagDitaa.adoc[]
 
 include::mods/diagUmlet.adoc[]
 
-syntrax doesn't work for now
+
+WARNING: syntrax doesn't work for now - no library installed here, so just showing how it would look like in the code
 
 ----
 include::mods/diagSyntrax.adoc[]
 ----
 
-blockdiag demo
-----
 include::mods/diagBlock.adoc[]
-----
 
 == Meme extension
 
