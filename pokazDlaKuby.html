@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.18">
+<meta name="generator" content="Asciidoctor 2.0.23">
 <meta name="author" content="Tomasz Borek LAFK pl">
 <title>Oto dokument</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
@@ -141,7 +141,7 @@ p a>code:hover{color:rgba(0,0,0,.9)}
 #content::before{content:none}
 #header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
 #header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #dddddf}
-#header>h1:only-child,body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
+#header>h1:only-child{border-bottom:1px solid #dddddf;padding-bottom:8px}
 #header .details{border-bottom:1px solid #dddddf;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:flex;flex-flow:row wrap}
 #header .details span:first-child{margin-left:-.125em}
 #header .details span.email a{color:rgba(0,0,0,.85)}
@@ -163,6 +163,7 @@ p a>code:hover{color:rgba(0,0,0,.9)}
 #toctitle{color:#7a2518;font-size:1.2em}
 @media screen and (min-width:768px){#toctitle{font-size:1.375em}
 body.toc2{padding-left:15em;padding-right:0}
+body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
 #toc.toc2{margin-top:0!important;background:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #e7e7e9;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
 #toc.toc2 #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
 #toc.toc2>ul{font-size:.9em;margin-bottom:0}
@@ -209,13 +210,10 @@ table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
 .admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #dddddf;color:rgba(0,0,0,.6);word-wrap:anywhere}
 .admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
 .exampleblock>.content{border:1px solid #e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;border-radius:4px}
-.exampleblock>.content>:first-child{margin-top:0}
-.exampleblock>.content>:last-child{margin-bottom:0}
 .sidebarblock{border:1px solid #dbdbd6;margin-bottom:1.25em;padding:1.25em;background:#f3f3f2;border-radius:4px}
-.sidebarblock>:first-child{margin-top:0}
-.sidebarblock>:last-child{margin-bottom:0}
 .sidebarblock>.content>.title{color:#7a2518;margin-top:0;text-align:center}
-.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
+.exampleblock>.content>:first-child,.sidebarblock>.content>:first-child{margin-top:0}
+.exampleblock>.content>:last-child,.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
 .literalblock pre,.listingblock>.content>pre{border-radius:4px;overflow-x:auto;padding:1em;font-size:.8125em}
 @media screen and (min-width:768px){.literalblock pre,.listingblock>.content>pre{font-size:.90625em}}
 @media screen and (min-width:1280px){.literalblock pre,.listingblock>.content>pre{font-size:1em}}
@@ -331,7 +329,7 @@ a.image{text-decoration:none;display:inline-block}
 a.image object{pointer-events:none}
 sup.footnote,sup.footnoteref{font-size:.875em;position:static;vertical-align:super}
 sup.footnote a,sup.footnoteref a{text-decoration:none}
-sup.footnote a:active,sup.footnoteref a:active{text-decoration:underline}
+sup.footnote a:active,sup.footnoteref a:active,#footnotes .footnote a:first-of-type:active{text-decoration:underline}
 #footnotes{padding-top:.75em;padding-bottom:.75em;margin-bottom:.625em}
 #footnotes hr{width:20%;min-width:6.25em;margin:-.25em 0 .75em;border-width:1px 0 0}
 #footnotes .footnote{padding:0 .375em 0 .225em;line-height:1.3334;font-size:.875em;margin-left:1.2em;margin-bottom:.2em}
@@ -394,7 +392,7 @@ b.conum *{color:inherit!important}
 dt,th.tableblock,td.content,div.footnote{text-rendering:optimizeLegibility}
 h1,h2,p,td.content,span.alt,summary{letter-spacing:-.01em}
 p strong,td.content strong,div.footnote strong{letter-spacing:-.005em}
-p,blockquote,dt,td.content,span.alt,summary{font-size:1.0625rem}
+p,blockquote,dt,td.content,td.hdlist1,span.alt,summary{font-size:1.0625rem}
 p{margin-bottom:1.25rem}
 .sidebarblock p,.sidebarblock dt,.sidebarblock td.content,p.tableblock{font-size:1em}
 .exampleblock>.content{background:#fffef7;border-color:#e0e0dc;box-shadow:0 1px 4px #e0e0dc}
@@ -437,77 +435,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-pre.pygments .hll { background-color: #ffffcc }
-pre.pygments { background: #f8f8f8; }
-pre.pygments .tok-c { color: #408080; font-style: italic } /* Comment */
-pre.pygments .tok-err { border: 1px solid #FF0000 } /* Error */
-pre.pygments .tok-k { color: #008000; font-weight: bold } /* Keyword */
-pre.pygments .tok-o { color: #666666 } /* Operator */
-pre.pygments .tok-ch { color: #408080; font-style: italic } /* Comment.Hashbang */
-pre.pygments .tok-cm { color: #408080; font-style: italic } /* Comment.Multiline */
-pre.pygments .tok-cp { color: #BC7A00 } /* Comment.Preproc */
-pre.pygments .tok-cpf { color: #408080; font-style: italic } /* Comment.PreprocFile */
-pre.pygments .tok-c1 { color: #408080; font-style: italic } /* Comment.Single */
-pre.pygments .tok-cs { color: #408080; font-style: italic } /* Comment.Special */
-pre.pygments .tok-gd { color: #A00000 } /* Generic.Deleted */
-pre.pygments .tok-ge { font-style: italic } /* Generic.Emph */
-pre.pygments .tok-gr { color: #FF0000 } /* Generic.Error */
-pre.pygments .tok-gh { color: #000080; font-weight: bold } /* Generic.Heading */
-pre.pygments .tok-gi { color: #00A000 } /* Generic.Inserted */
-pre.pygments .tok-go { color: #888888 } /* Generic.Output */
-pre.pygments .tok-gp { color: #000080; font-weight: bold } /* Generic.Prompt */
-pre.pygments .tok-gs { font-weight: bold } /* Generic.Strong */
-pre.pygments .tok-gu { color: #800080; font-weight: bold } /* Generic.Subheading */
-pre.pygments .tok-gt { color: #0044DD } /* Generic.Traceback */
-pre.pygments .tok-kc { color: #008000; font-weight: bold } /* Keyword.Constant */
-pre.pygments .tok-kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
-pre.pygments .tok-kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
-pre.pygments .tok-kp { color: #008000 } /* Keyword.Pseudo */
-pre.pygments .tok-kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
-pre.pygments .tok-kt { color: #B00040 } /* Keyword.Type */
-pre.pygments .tok-m { color: #666666 } /* Literal.Number */
-pre.pygments .tok-s { color: #BA2121 } /* Literal.String */
-pre.pygments .tok-na { color: #7D9029 } /* Name.Attribute */
-pre.pygments .tok-nb { color: #008000 } /* Name.Builtin */
-pre.pygments .tok-nc { color: #0000FF; font-weight: bold } /* Name.Class */
-pre.pygments .tok-no { color: #880000 } /* Name.Constant */
-pre.pygments .tok-nd { color: #AA22FF } /* Name.Decorator */
-pre.pygments .tok-ni { color: #999999; font-weight: bold } /* Name.Entity */
-pre.pygments .tok-ne { color: #D2413A; font-weight: bold } /* Name.Exception */
-pre.pygments .tok-nf { color: #0000FF } /* Name.Function */
-pre.pygments .tok-nl { color: #A0A000 } /* Name.Label */
-pre.pygments .tok-nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
-pre.pygments .tok-nt { color: #008000; font-weight: bold } /* Name.Tag */
-pre.pygments .tok-nv { color: #19177C } /* Name.Variable */
-pre.pygments .tok-ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
-pre.pygments .tok-w { color: #bbbbbb } /* Text.Whitespace */
-pre.pygments .tok-mb { color: #666666 } /* Literal.Number.Bin */
-pre.pygments .tok-mf { color: #666666 } /* Literal.Number.Float */
-pre.pygments .tok-mh { color: #666666 } /* Literal.Number.Hex */
-pre.pygments .tok-mi { color: #666666 } /* Literal.Number.Integer */
-pre.pygments .tok-mo { color: #666666 } /* Literal.Number.Oct */
-pre.pygments .tok-sa { color: #BA2121 } /* Literal.String.Affix */
-pre.pygments .tok-sb { color: #BA2121 } /* Literal.String.Backtick */
-pre.pygments .tok-sc { color: #BA2121 } /* Literal.String.Char */
-pre.pygments .tok-dl { color: #BA2121 } /* Literal.String.Delimiter */
-pre.pygments .tok-sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
-pre.pygments .tok-s2 { color: #BA2121 } /* Literal.String.Double */
-pre.pygments .tok-se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
-pre.pygments .tok-sh { color: #BA2121 } /* Literal.String.Heredoc */
-pre.pygments .tok-si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
-pre.pygments .tok-sx { color: #008000 } /* Literal.String.Other */
-pre.pygments .tok-sr { color: #BB6688 } /* Literal.String.Regex */
-pre.pygments .tok-s1 { color: #BA2121 } /* Literal.String.Single */
-pre.pygments .tok-ss { color: #19177C } /* Literal.String.Symbol */
-pre.pygments .tok-bp { color: #008000 } /* Name.Builtin.Pseudo */
-pre.pygments .tok-fm { color: #0000FF } /* Name.Function.Magic */
-pre.pygments .tok-vc { color: #19177C } /* Name.Variable.Class */
-pre.pygments .tok-vg { color: #19177C } /* Name.Variable.Global */
-pre.pygments .tok-vi { color: #19177C } /* Name.Variable.Instance */
-pre.pygments .tok-vm { color: #19177C } /* Name.Variable.Magic */
-pre.pygments .tok-il { color: #666666 } /* Literal.Number.Integer.Long */
-</style>
 </head>
 <body class="article">
 <div id="header">
@@ -582,20 +509,30 @@ ważne - w części o URLach jest dokumentacja
 <div class="listingblock">
 <div class="title">Przykład markdown</div>
 <div class="content">
-<pre>## Nagłówek z markdown
+<pre>## Nagłówek z Markdown
 
 ```
 to jest blok kodu
 ```
 
-Powyższe zostało osiągnięte jak w Markdown.</pre>
+**Powyższe** *zostało* osiągnięte jak w Markdown.
+__Powyższe__ _zostało_ podkreślone
+
+Lista w Markdown:
+
+1. punkt pierwszy
+1. punkt drugi
+1. punkt trzeci
+1. punkt czwarty
+1. punkt piąty
+1. punkt szósty</pre>
 </div>
 </div>
 </div>
 <div id="toc" class="toc">
 <div id="toctitle">Spis Treści</div>
 <ul class="sectlevel1">
-<li><a href="#_nagłówek_z_markdown">Nagłówek z markdown</a></li>
+<li><a href="#_nagłówek_z_markdown">Nagłówek z Markdown</a></li>
 <li><a href="#_pokazówka">Pokazówka</a></li>
 <li><a href="#_bibliography_links">Bibliography / Links</a></li>
 <li><a href="#_prawdziwa_potęga_z_obsługą_kodu">Prawdziwa potęga z obsługą kodu!</a>
@@ -640,15 +577,41 @@ Powyższe zostało osiągnięte jak w Markdown.</pre>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_nagłówek_z_markdown">Nagłówek z markdown</h2>
+<h2 id="_nagłówek_z_markdown">Nagłówek z Markdown</h2>
 <div class="sectionbody">
 <div class="listingblock">
 <div class="content">
-<pre class="pygments highlight"><code><span></span>to jest blok kodu</code></pre>
+<pre class="pygments highlight"><code>to jest blok kodu</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Powyższe zostało osiągnięte jak w Markdown.</p>
+<p><strong>Powyższe</strong> <strong>zostało</strong> osiągnięte jak w Markdown.<br>
+<em>Powyższe</em> <em>zostało</em> podkreślone</p>
+</div>
+<div class="paragraph">
+<p>Lista w Markdown:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>punkt pierwszy</p>
+</li>
+<li>
+<p>punkt drugi</p>
+</li>
+<li>
+<p>punkt trzeci</p>
+</li>
+<li>
+<p>punkt czwarty</p>
+</li>
+<li>
+<p>punkt piąty</p>
+</li>
+<li>
+<p>punkt szósty</p>
+</li>
+</ol>
 </div>
 </div>
 </div>
@@ -775,16 +738,16 @@ If you started process in the background and killed it&#8217;s terminal, process
 <div class="listingblock">
 <div class="title">to jest potęga!</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java"><span></span>    <span class="tok-kd">public</span> <span class="tok-kt">int</span> <span class="tok-nf">foo</span><span class="tok-p">()</span> <span class="tok-p">{</span>
-        <span class="tok-kt">int</span> <span class="tok-n">result</span> <span class="tok-o">=</span> <span class="tok-mi">1</span><span class="tok-p">;</span>
-        <span class="tok-k">try</span> <span class="tok-p">{</span>
-            <span class="tok-k">return</span> <span class="tok-n">result</span><span class="tok-p">;</span>
-        <span class="tok-p">}</span> <span class="tok-k">finally</span> <span class="tok-p">{</span>
-            <span class="tok-n">result</span><span class="tok-o">++</span><span class="tok-p">;</span>
-        <span class="tok-p">}</span>
-    <span class="tok-p">}</span>
+<pre class="pygments highlight"><code data-lang="java">    public int foo() {
+        int result = 1;
+        try {
+            return result;
+        } finally {
+            result++;
+        }
+    }
     
-    <span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;Result of foo(): &quot;</span> <span class="tok-o">+</span> <span class="tok-n">foo</span><span class="tok-p">());</span></code></pre>
+    System.out.println("Result of foo(): " + foo());</code></pre>
 </div>
 </div>
 <div class="sect2">
@@ -792,26 +755,16 @@ If you started process in the background and killed it&#8217;s terminal, process
 <div class="listingblock">
 <div class="title">linie kodu mogą mieć atrybut inline lub table by kopiowanie działało z nimi lub bez</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java"><table class="linenotable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span></pre></div></td><td class="code"><pre><span></span>    <span class="tok-kd">public</span> <span class="tok-kt">int</span> <span class="tok-nf">foo</span><span class="tok-p">()</span> <span class="tok-p">{</span>
-        <span class="tok-kt">int</span> <span class="tok-n">result</span> <span class="tok-o">=</span> <span class="tok-mi">1</span><span class="tok-p">;</span>
-        <span class="tok-k">try</span> <span class="tok-p">{</span>
-            <span class="tok-k">return</span> <span class="tok-n">result</span><span class="tok-p">;</span>
-        <span class="tok-p">}</span> <span class="tok-k">finally</span> <span class="tok-p">{</span>
-            <span class="tok-n">result</span><span class="tok-o">++</span><span class="tok-p">;</span>
-        <span class="tok-p">}</span>
-    <span class="tok-p">}</span>
+<pre class="pygments highlight"><code data-lang="java">    public int foo() {
+        int result = 1;
+        try {
+            return result;
+        } finally {
+            result++;
+        }
+    }
     
-    <span class="tok-n">System</span><span class="tok-p">.</span><span class="tok-na">out</span><span class="tok-p">.</span><span class="tok-na">println</span><span class="tok-p">(</span><span class="tok-s">&quot;Result of foo(): &quot;</span> <span class="tok-o">+</span> <span class="tok-n">foo</span><span class="tok-p">());</span>
-</pre></td></tr></table></code></pre>
+    System.out.println("Result of foo(): " + foo());</code></pre>
 </div>
 </div>
 <div class="admonitionblock tip">
@@ -844,20 +797,13 @@ powyższy przykład ma też wybrane linie, które chce załączyć, ale można d
 <div class="listingblock">
 <div class="title">Jeśli chcesz zwrócić czyjąś uwagę na konkretne rzeczy&#8230;&#8203;</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="java"><table class="linenotable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span>
-<span class="normal">7</span></pre></div></td><td class="code"><pre><span></span><i class="conum" data-value="3"></i><b>(3)</b>
-<span class="tok-kd">class</span> <span class="tok-nc">Test</span> <span class="tok-p">{</span> <i class="conum" data-value="1"></i><b>(1)</b>
+<pre class="pygments highlight"><code data-lang="java"><i class="conum" data-value="3"></i><b>(3)</b>
+class Test { <i class="conum" data-value="1"></i><b>(1)</b>
 
-    <span class="tok-kd">public</span> <span class="tok-kd">static</span> <span class="tok-kt">void</span> <span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-n">String</span><span class="tok-o">[]</span> <span class="tok-n">args</span><span class="tok-p">)</span> <span class="tok-p">{</span>
+    public static void main(String[] args) {
         <i class="conum" data-value="2"></i><b>(2)</b>
-    <span class="tok-p">}</span>
-<span class="tok-p">}</span>
-</pre></td></tr></table></code></pre>
+    }
+}</code></pre>
 </div>
 </div>
 <div class="colist arabic">
@@ -1146,18 +1092,18 @@ jest wieloliniowy</pre>
 <div class="listingblock">
 <div class="title">częste polecenie hakera ;-)</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="bash"><span></span>cat /etc/passwd</code></pre>
+<pre class="pygments highlight"><code data-lang="bash">cat /etc/passwd</code></pre>
 </div>
 </div>
 <div class="listingblock">
 <div class="title">koordynaty z POMa</div>
 <div class="content">
-<pre class="pygments highlight"><code data-lang="xml"><span></span>    <span class="tok-nt">&lt;groupId&gt;</span>pl.lafk<span class="tok-nt">&lt;/groupId&gt;</span>
-    <span class="tok-nt">&lt;artifactId&gt;</span>tomkat<span class="tok-nt">&lt;/artifactId&gt;</span>
-    <span class="tok-nt">&lt;version&gt;</span>0.1<span class="tok-nt">&lt;/version&gt;</span>
-    <span class="tok-nt">&lt;name</span> <span class="tok-na">atrybut=</span><span class="tok-s">&quot;a&quot;</span><span class="tok-nt">&gt;</span>tomkat<span class="tok-nt">&lt;/name&gt;</span>
-    <span class="tok-nt">&lt;description&gt;</span>Wiosna z buta<span class="tok-nt">&lt;/description&gt;</span>
-    <span class="tok-nt">&lt;url&gt;</span>lafk.pl<span class="tok-nt">&lt;/url&gt;</span></code></pre>
+<pre class="pygments highlight"><code data-lang="xml">    &lt;groupId&gt;pl.lafk&lt;/groupId&gt;
+    &lt;artifactId&gt;tomkat&lt;/artifactId&gt;
+    &lt;version&gt;0.1&lt;/version&gt;
+    &lt;name atrybut="a"&gt;tomkat&lt;/name&gt;
+    &lt;description&gt;Wiosna z buta&lt;/description&gt;
+    &lt;url&gt;lafk.pl&lt;/url&gt;</code></pre>
 </div>
 </div>
 </div>
@@ -1386,7 +1332,7 @@ cytat
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-11-08 10:21:07 +0100
+Last updated 2025-10-21 09:32:02 +0200
 </div>
 </div>
 </body>

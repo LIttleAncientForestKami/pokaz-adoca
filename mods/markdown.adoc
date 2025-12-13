@@ -5,6 +5,7 @@ to jest blok kodu
 ```
 
 **Powyższe** *zostało* osiągnięte jak w Markdown.
+__Powyższe__ _zostało_ podkreślone
 
 Lista w Markdown: 
 
@@ -14,3 +15,4 @@ Lista w Markdown:
 1. punkt czwarty
 1. punkt piąty
 1. punkt szósty
+
