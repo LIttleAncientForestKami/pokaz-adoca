@@ -1,0 +1,55 @@
+:umlet: /opt/Umlet/umlet.sh
+== UMLet
+
+Not a fan. First, for a long time (and some unknown reason) UMLet didn't work for me. :( 
+When I finally made it work, I was underwhelmed. Lot of writing to get that UML, when compared to, say, PlantUML.
+
+WARNING: SVG vs PNG perhaps?
+
+=== Setup
+
+. I installed the standalone app from https://www.umlet.com/
+.. Download: https://www.umlet.com/changes.htm
+.. Install by unzip, for instance to `/opt/Umlet`,
+.. `chmod +x umlet.sh`
+.. Add a `/usr/bin/umlet` pointing at `umlet.sh` and you're set.
+. Troubleshooting
+.. I corrected the incorrect UMLet home var so JAR is reached
+.. Operate on local files, not on remote ones
+
+.Credits: Harard Storle, http://www.itmeyer.at/umlet/uml2/uxf/CL_design.uxf
+//[umlet, diag/diag_Umlet, png]
+[umlet]
+....
+include::umlet.xcf[]
+....
+
+.Credits: https://stackoverflow.com/questions/60203121/how-to-use-umlet-with-asciidoctor-diagram
+[umlet]
+....
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>60</x>
+      <y>100</y>
+      <w>120</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Use case 1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLActor</id>
+    <coordinates>
+      <x>230</x>
+      <y>80</y>
+      <w>60</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>Actor</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
+....
