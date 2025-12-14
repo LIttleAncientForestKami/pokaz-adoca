@@ -18,14 +18,13 @@ WARNING: SVG vs PNG perhaps?
 .. Operate on local files, not on remote ones
 
 .Credits: Harard Storle, http://www.itmeyer.at/umlet/uml2/uxf/CL_design.uxf
-//[umlet, diag/diag_Umlet, png]
-[umlet]
+[umlet, zasoby/genDiag/diag_UmletHarardStorle, png]
 ....
 include::umlet.xcf[]
 ....
 
 .Credits: https://stackoverflow.com/questions/60203121/how-to-use-umlet-with-asciidoctor-diagram
-[umlet]
+[umlet, zasoby/genDiag/diag_Umlet_UseCase, png]
 ....
 <diagram program="umlet" version="14.3.0">
   <zoom_level>10</zoom_level>

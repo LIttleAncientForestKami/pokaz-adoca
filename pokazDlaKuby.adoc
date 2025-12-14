@@ -22,6 +22,9 @@ Asciidoctor :: świetny sposób na doktoryzowanie się w znaczkach Ascii. Ale mo
 Mark~down~ ::
 coś co konwertujemy do mark^up^ - czyli znaczników HTMLa. Markdown, Ricka Grubera chyba dzieło. 
 
+.Obraz własny
+image::zasoby/jakPowstajeAdoc.png[]
+
 .Przykład markdown
 ----
 include::mods/markdown.adoc[]

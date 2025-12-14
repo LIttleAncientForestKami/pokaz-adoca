@@ -6,7 +6,6 @@ include::mods/diagDitaa.adoc[]
 
 include::mods/diagUmlet.adoc[]
 
-
 WARNING: syntrax doesn't work for now - no library installed here, so just showing how it would look like in the code
 
 ----
@@ -20,6 +19,19 @@ include::mods/diagBlock.adoc[]
 Perhaps I also need to enable the extension somehow or get the image? Doesn't yet work
 
 `meme::yunoguy.jpg[Doc writers,Y U NO \\ AsciiDoc]`
+
+== All in one: PlantUml
+
+Way too much in one place, to the point PlantUML is installed as a separate Ruby Gem: `asciidoctor-diagram-plantuml`.
+Install and usage: https://docs.asciidoctor.org/diagram-extension/latest/diagram_types/plantuml/
+
+Tool page: https://plantuml.com/
+
+.It supports UML of course. Credits: tool page screenshots
+image::zasoby/PlantUML_UMLDiagrams.png[]
+
+.But not only! Credits: tool page screenshots
+image::zasoby/PlantUML_UMLDiagrams.png[]
 
 == Sources
 

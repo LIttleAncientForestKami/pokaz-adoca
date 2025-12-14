@@ -1,6 +1,6 @@
 == Pokazówka
 
-image::BrianGoetzOnWhatIsAGetter.png[cytat z Briana]
+image::zasoby/BrianGoetzOnWhatIsAGetter.png[cytat z Briana]
 
 TERM :: Definition of it, `inline code` works here too
 

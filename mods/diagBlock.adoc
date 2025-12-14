@@ -9,7 +9,7 @@ activity diagram (w/ actdiag)
 logical network diagram (w/ nwdiag)
 ____
 
-[blockdiag, diag/diag_Block, png]
+[blockdiag, zasoby/genDiag/diag_Block, png]
 .Credits: Blockdiagram sample from http://blockdiag.com/en/blockdiag/examples.html#simple-diagram
 ....
 blockdiag {
@@ -18,7 +18,7 @@ blockdiag {
 }
 ....
 
-[blockdiag, diag/diag_BlockFlow, png]
+[blockdiag, zasoby/genDiag/diag_BlockFlow, png]
 ....
 blockdiag {
   // standard node shapes
