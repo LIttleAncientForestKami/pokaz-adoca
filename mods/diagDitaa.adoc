@@ -2,6 +2,8 @@
 
 Requires gem `asciidoctor-diagram-ditaamini` or Ditaa on the executables path.
 
+About Ditaa: https://ditaa.sourceforge.net/
+
 [ditaa, zasoby/genDiag/diag_Ditaa, png]
 .cBLK should colour it in black but doesn't work?
 ....
