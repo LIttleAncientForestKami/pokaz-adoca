@@ -37,3 +37,11 @@ image::India.png[background]
 === tło okładkowe
 
 image::India.png[background, size=cover]
+
+=== Źródła
+
+. https://asciidoctor.github.io/asciidoctor-gradle-examples/asciidoc-to-revealjs-example/asciidocRevealJs/example-deck.html#/[Adoc -> RevealJS przykład]
+. https://sunye-g.univ-nantes.io/asciidoctor-reveal-example/#/[NaoMod, przykładowa prezka, 171 slajdów z przykładami]
+. https://verron.pro/documentation-as-code/2024/01/01/presentations-as-code.html[Prezki jako kod - Java, Maven, Adoc, Reveal.js] - ciekawe!
+. https://github.com/jsnlund/reveal.adoc[Reveal.JS]
+
